@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #2b2e4a;
   font-family: "Exo 2", sans-serif;
+  overflow: hidden;
 }
 
 .header {
@@ -102,4 +103,45 @@ ul:hover {
   font-weight: 400;
   text-align: center;
   outline: none;
+}
+
+/* slider */
+
+.slider {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.slider__container {
+  white-space: nowrap; /* This is for give the of infinite x scroll */
+  margin: 50px 0px;
+  padding-bottom: 10px;
+}
+
+.slider__item {
+  background-color: #f4ea8e;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 550ms;
+  transform-origin: center left;
+}
+
+.slider__item:hover ~ .slider__item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.slider__container:hover .slider__item {
+  opacity: 0.3;
+}
+
+.slider__container:hover .slider__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
