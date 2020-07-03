@@ -16,6 +16,7 @@ body {
 
 .header__logo {
   display: flex;
+  align-items: center;
 }
 
 .header__title {
@@ -24,8 +25,8 @@ body {
 }
 
 .header__image {
-  width: 96px;
-  height: 75px;
+  width: 70px;
+  height: 60px;
   margin-left: 0.9em;
 }
 
@@ -73,4 +74,32 @@ ul:hover {
 
 .header__menu li a:hover {
   text-decoration: underline;
+}
+
+/* Search bar */
+
+.search {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__title {
+  color: #e84545;
+  font-size: 32px;
+}
+
+.search__bar {
+  border: solid 3px #903749;
+  border-radius: 15px;
+  width: 30%; /* Be careful with the responsive on this part */
+  height: 30px;
+  color: #53354a;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  outline: none;
 }
