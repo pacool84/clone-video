@@ -131,6 +131,7 @@ ul:hover {
   cursor: pointer;
   transition: 550ms;
   transform-origin: center left;
+  position: relative;
 }
 
 .slider__item:hover ~ .slider__item {
@@ -144,4 +145,26 @@ ul:hover {
 .slider__container:hover .slider__item:hover {
   transform: scale(1.5);
   opacity: 1;
+}
+
+.slider__item--image {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+.slider__item--details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 16px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
