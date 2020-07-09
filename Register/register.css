@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #903749, #2b2e4a);
+  font-family: "Exo 2", sans-serif;
+}
+
+h2 {
+  color: #e84545;
+}
+
+.register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__container {
+  width: 500px;
+  height: 800px;
+  padding: 0px;
+  border: solid 3px #903749;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.register__container--form {
+  height: 50%;
+  width: 80%;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__container--form > input {
+  height: 35px;
+  width: 95%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  border: solid 3px #903749;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+}
+
+.register__container--form > p {
+  color: white;
+}
+
+.register__container--form > button {
+  height: 60px;
+  width: 55%;
+  margin: 20px 0 30px 0;
+  border-radius: 30px;
+  outline: none;
+  background-color: #e84545;
+  border: solid #e43f5a;
+
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.register__container > img {
+  height: 150px;
+  width: 150px;
+}
+
+.register__container--agreements {
+  color: white;
+  font-size: 20px;
+}
+
+.register__container--agreements a {
+  color: white;
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+.register__container--agreements a:hover {
+  text-decoration: underline;
+  color: #e84545;
+}
