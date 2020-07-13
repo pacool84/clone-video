@@ -80,9 +80,9 @@ ul:hover {
 /* Search bar */
 
 .search {
-  height: 200px;
+  height: 150px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -90,19 +90,55 @@ ul:hover {
 .search__title {
   color: #e84545;
   font-size: 32px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.search__bar {
-  border: solid 3px #903749;
-  border-radius: 15px;
-  width: 30%; /* Be careful with the responsive on this part */
-  height: 30px;
-  color: #53354a;
-  background-color: rgba(255, 255, 255, 0.9);
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
+/* Experiment */
+
+.search-bar {
+  background: #2f3640;
+  height: 60px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.search-bar:hover > .search-text {
+  width: 500px;
+  padding: 0 6px;
+}
+
+.search-button {
+  color: #e84118;
+  float: right;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #2f3640;
+  display: flex;
+  transition: 0.9s;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar:hover > .search-button {
+  background-color: white;
+}
+
+.search-text {
+  border: none;
+  background: none;
   outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 22px;
+  line-height: 40px;
+  transition: 0.9s;
+  width: 0px;
 }
 
 /* slider */
